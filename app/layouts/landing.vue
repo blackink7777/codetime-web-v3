@@ -23,9 +23,9 @@ watchEffect(() => {
         alt="Code Time"
         src="/icon.svg"
         width="26"
-        class="ml-1 mr-2 sm:ml-2 sm:mr-3 shrink-0"
+        class="ml-1 mr-2 shrink-0 sm:ml-2 sm:mr-3"
       >
-      <div class="flex gap-2 items-center min-w-0 max-w-full">
+      <div class="flex gap-2 max-w-full min-w-0 items-center">
         <LanguageSelect />
       </div>
     </RHeader>

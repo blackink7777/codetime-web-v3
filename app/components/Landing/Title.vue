@@ -1,5 +1,5 @@
 <template>
-  <div class="landing-title font-bold flex flex-wrap justify-center gap-x-4 gap-y-1 text-center max-w-full min-w-0">
+  <div class="landing-title font-bold text-center flex flex-wrap gap-x-4 gap-y-1 max-w-full min-w-0 justify-center">
     <span class="gradient-text title-code transition-transform duration-300">Code</span>
     <span class="gradient-text title-time transition-transform duration-300">Time</span>
   </div>

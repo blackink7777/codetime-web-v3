@@ -79,8 +79,8 @@ watchEffect(() => {
     <LandingSumHours />
   </div>
 
-  <div class="children:px-2 overflow-x-hidden">
-    <div class="m-auto mt-12 w-full max-w-6xl px-4 py-6 sm:mt-16 sm:p-10">
+  <div class="overflow-x-hidden children:px-2">
+    <div class="m-auto mt-12 px-4 py-6 max-w-6xl w-full sm:mt-16 sm:p-10">
       <h2 class="text-2xl font-bold my-4 flex flex-col max-w-xl relative sm:text-3xl md:max-w-6xl">
         {{ t.landing.features.visualization.title }}
       </h2>
@@ -89,19 +89,19 @@ watchEffect(() => {
       </div>
       <div class="my-6 flex flex-col gap-2 sm:my-8">
         <div class="flex flex-col gap-2 lg:flex-row">
-          <div class="w-full min-w-0 lg:w-86 lg:shrink-0 overflow-x-hidden">
+          <div class="min-w-0 w-full overflow-x-hidden lg:shrink-0 lg:w-86">
             <DashboardTopCardTemplateDemo />
           </div>
-          <div class="w-full min-w-0 overflow-x-hidden">
+          <div class="min-w-0 w-full overflow-x-hidden">
             <DashboardCalendarCardDemo
               class="w-full"
             />
           </div>
         </div>
-        <div class="min-w-0 overflow-x-auto overscroll-x-contain pb-1">
+        <div class="pb-1 overscroll-x-contain min-w-0 overflow-x-auto">
           <DashboardProjectYDotCardDemo />
         </div>
-        <div class="min-w-0 overflow-x-auto overscroll-x-contain pb-1">
+        <div class="pb-1 overscroll-x-contain min-w-0 overflow-x-auto">
           <PoltDailyDistributionTemplateDemo />
         </div>
       </div>

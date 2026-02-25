@@ -65,7 +65,7 @@ const t = useI18N()
 </script>
 
 <template>
-  <div class="stats-card px-4 py-10 sm:px-8 sm:py-12 flex flex-col gap-4 shadow-sm items-center relative overflow-hidden backdrop-blur-sm">
+  <div class="stats-card px-4 py-10 flex flex-col gap-4 shadow-sm items-center relative overflow-hidden backdrop-blur-sm sm:px-8 sm:py-12">
     <div class="opacity-20 inset-0 absolute">
       <div class="floating-circles">
         <div class="floating-circle" />
@@ -74,27 +74,27 @@ const t = useI18N()
       </div>
     </div>
 
-    <div class="flex flex-col gap-4 items-center relative z-10 w-full min-w-0">
-      <span class="stats-subtitle text-xs sm:text-sm tracking-wide font-medium inline-block text-center px-2">
+    <div class="flex flex-col gap-4 min-w-0 w-full items-center relative z-10">
+      <span class="stats-subtitle text-xs tracking-wide font-medium px-2 text-center inline-block sm:text-sm">
         {{ t.landing.alreadyStatistical }} ({{ t.landing.minutes }})
       </span>
 
       <div
         v-if="status === 'success'"
-        class="stats-number-wrap flex items-end justify-center w-full min-w-0"
+        class="stats-number-wrap flex min-w-0 w-full items-end justify-center"
       >
         <span
           key="b"
-          class="stats-number animate-pulse-glow font-bold font-mono leading-none max-w-full"
+          class="stats-number animate-pulse-glow leading-none font-bold font-mono max-w-full"
         >
           {{ fomater.format(minutes) }}
         </span>
       </div>
 
-      <div v-else class="flex items-end justify-center w-full min-w-0">
+      <div v-else class="flex min-w-0 w-full items-end justify-center">
         <div
           key="a"
-          class="shimmer font-bold font-mono rounded-lg h-12 sm:h-15 w-[min(21rem,80vw)] animate-pulse"
+          class="shimmer font-bold font-mono rounded-lg h-12 w-[min(21rem,80vw)] animate-pulse sm:h-15"
         />
       </div>
 
